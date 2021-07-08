@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("imgs/Pokemonfundo.jpg");
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .slider-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 70%;
+            padding: 40px;
+            margin-top: -22px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .active, .click:hover {
+            background-color: #717171;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 2}
+        }
+
+        @keyframes fade {
+            from {opacity: .2} 
+            to {opacity: 2}
+        }
+
+        @media only screen and (max-width: 500px) {
+            .prev, .next, .text {font-size: 20px}
+        }
+
+        #pokemon {
+            display: inline-block;
+            vertical-align: top;
+            border: solid 1px rgb(255, 255, 255);
+            box-shadow: 0 2px 20px 5px rgb(124, 2, 2);
+            height: 700px;
+            width: 300px;
+            margin: 5px 20px;
+            padding: 5px;
+            background-color: #fff;
+        }
+
+        img {
+            margin: 20px;
+            height: 210px;
+            width: 200px;
+            vertical-align: middle;
+        }
+
+        .dig-info {
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, tr  {
+            background-color: rgb(236, 200, 200);
+            font-style: italic;
+            border-style: double;
+            width: 150px;
+            border-color: rgb(255, 255, 255);
+            color:rgb(54, 0, 0);
+        }
+
+        caption {
+            border-style: double;
+            background-color:rgb(117, 3, 3);
+            color:rgb(255, 255, 255);
+        }
+
+        p {
+           font-size: 0.9em;
+           text-align: justify;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+<h1>Pokedex</h1>
+<div class="slider-container" align="center">
+    <div class="slide-fade" id="pokemon">
+            <img src="imgs/Charmander.png">   
+            <div class="dig-info">
+                 <h2>Charmander</h2>
+                 <table>
+                    <caption>Características</caption>
+                    <tbody>
+                        <tr>
+                            <td>Tipo</td>
+                            <td>Fogo</td>
+                        </tr> 
+                        <tr>
+                            <td>Linha Evolutiva</td>
+                            <td>Charmeleon, Charizard</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <p> O fim da cauda de um Charmander é aceso com uma chama, a chama muda de tamanho conforme sua saúde física e as emoções do personagem. Charmander evolui para Charmeleon e, em seguida, para Charizard.</p>
+            </div>
+    </div>
+    <div class="slide-fade" id="pokemon">
+        <img src="imgs/Pikachu.png">   
+        <div class="dig-info">
+                <h2>Pikachu</h2>
+            <table>
+                <caption>Características</caption>
+                <tbody>
+                    <tr>
+                        <td>Tipo</td>
+                        <td>Elétrico</td>
+                    </tr> 
+                    <tr>
+                        <td>Linha Evolutiva</td>
+                        <td>Pichu, Raichu</td>
+                    </tr>
+                </tbody>
+            </table>   
+            <p>Descrito como um rato, os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, e pernas curtas e uma longa cauda em seu. com exceção de suas duas listras marrom nas costas e a ponta de suas orelhas pretas, eles também tem dois discos vermelhos em cada bochecha e sua cauda quando macho tem um formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta. Geralmente são bípedes. </p>
+        </div>
+    </div>
+        <div class="slide-fade" id="pokemon">
+            <img src="imgs/Squirtle.png">   
+            <div class="dig-info">
+                    <h2>Squirtle</h2>
+                <table>
+                    <caption>Características</caption>
+                    <tbody>
+                        <tr>
+                            <td>Tipo</td>
+                            <td>Água</td>
+                        </tr> 
+                        <tr>
+                            <td>Linha Evolutiva</td>
+                            <td>Wartortle, Blastoise</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <p>Squirtle é um Pokémon tartaruga com olhos grandes e bochechas rechonchudas, capazes de se mover em dois pés ou de quatro. Sua pele é de um azul claro e eles possuem uma cauda longa e enrolada. Quando se sentem ameaçados, Squirtle retira seus membros em suas conchas marrom-alaranjadas e borrifam água de sua boca com grande força, seja para atacar seu oponente ou apenas para intimidá-lo. Se atacados de qualquer maneira, suas conchas são resistentes e fornecem excelente proteção. Ele se protege em sua concha e, em seguida, contra-ataca com jatos de água em todas as oportunidades.</p>
+            </div>
+        </div>
+        <div class="slide-fade" id="pokemon">
+            <img src="imgs/Bulbasaur.png">   
+            <div class="dig-info">
+                    <h2>Bulbasauro</h2>
+                <table>
+                    <caption>Características</caption>
+                    <tbody>
+                        <tr>
+                            <td>Tipo</td>
+                            <td>Planta</td>
+                        </tr> 
+                        <tr>
+                            <td>Linha Evolutiva</td>
+                            <td>Ivysaur, Venusaur</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <p>Bulbasaur é dos tipos Planta e Veneno, notoriamente percebível por conta da grande planta em suas costas e de sua coloração verde-água.</p>
+            </div>
+        </div>
+</div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide-fade");
+    var click = document.getElementsByClassName("click");
+
+    if (n > slides.length) 
+    {
+        slideIndex = 1
+    }    
+
+    if (n < 1)
+    {
+        slideIndex = slides.length
+    }
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+  
+    for (i = 0; i < click.length; i++) {
+      click[i].className = click[i].className.replace("active");
+    }
+
+    slides[slideIndex-1].style.display = "block";  
+    click[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

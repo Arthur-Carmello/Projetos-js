@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animes - Principal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+         body {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 50px;
+            grid-gap: 10px;
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+            background-color: rgb(230, 230, 230);
+        }
+        
+        .cabecalho {
+            background: linear-gradient(rgb(31, 11, 121), rgb(146, 11, 11));
+            color: #fff;
+            border-bottom: solid 5px #f70a0a;
+            height: 80px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cabecalho a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+            padding: 10px 15px;
+        }
+        
+        .menu a:hover {
+            background-color: rgb(10, 45, 247);
+            color: rgb(255, 255, 255);
+        }
+        
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            height: 10px;
+        }
+
+        .d1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+
+        p {
+            font-size: 25px;
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        .menu li ul {
+            position: absolute;
+            padding: 0px 5px;
+            background-color: rgb(201, 27, 27);
+            display: none;
+        }
+
+        .menu li:hover ul{
+            display: block;
+        }
+
+        .menu li a {
+            color:rgb(255, 255, 255); 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <h1>Animes</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="digimon.html">Digimon</a>
+                </li>
+                <li><a href="pokemon.html">Pokemon</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="wrapper">
+        <div class="d1">
+            <h1>Digimon e Pokemon são iguais?</h1>
+            <img width="400px" src="imgs/digimonepokemon.jpg">
+            <h2>Criaturas</h2>
+            <p>No anime, os Pokémon são criaturas que se desenvolveram ao longo das eras e acabaram sendo domesticadas pelos humanos. São, basicamente, os animais do universo da série.</p>
+            <p>Digimon são monstros formados por dados coletados da internet. Como são criados de forma aleatória podem assumir características de diferentes animais, plantas, veículos ou objetos.</p>
+            <h2>Universo</h2>
+            <p>Pokémon: Não há muitas informações sobre o universo da série. Existem locais que remetem a localidades reais, embora a maioria das cidades seja fictícia. Especula-se que seja um universo alternativo à nossa realidade. Outros ainda dizem que seja o futuro, embora nada tenha sido confirmado oficialmente.
+            <p>Digimon: O Digimundo é um universo alternativo que existe à partir da rede de computadores da Terra. Lá, além dos Digimon, existem animais, humanos e até gnomos digitais.</p>
+            <h2>História</h2>
+            <p>Pokémon: No anime, acompanhamos Ash, Brock, Misty e os novos amigos que se unem à jornada do protagonista para se tornar o maior mestre Pokémon de todos os tempos.</p>
+            <p>Digimon: A cada temporada, novos DigiEscolhidos são selecionados para ajudar os Digimon a salvarem o DigiMundo. Quando sua jornada chega ao fim, eles são mandados de volta à Terra até que um novo desequilíbrio surja e novas crianças sejam escolhidas.</p>
+        </div>   
+    </div>  
+</body> 
+</html>
