@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(2, 0, 99);
+    }
+
+    div {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10%;
+        background-color: #FFF;
+        box-shadow: 0 0 5px #FFF;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    button {
+        padding: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: center;
+    }
+
+</style>
+<body>
+    <div>
+        <h1>Cronômetro</h1>
+        <h2><span id="hh">00</span>:<span id="mm">00</span>:<span id="ss">00</span></h2>
+        </br>
+        <button onclick="start();" class="btn btn-primary">Iniciar</button>
+        <button onclick="pause();" class="btn btn-warning">Pausar</button>
+        <button onclick="reset();" class="btn btn-danger">Reiniciar</button>  
+    </div>
+<script src="cron.js"></script>
+</body>
+</html>
