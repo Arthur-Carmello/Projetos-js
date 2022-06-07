@@ -1,6 +1,6 @@
 ProjetosJS
 
-A seguir, uma prévia dos projetos:
+A seguir, uma prévia de alguns projetos:
 
 Flexbox
 ![1](https://user-images.githubusercontent.com/37301918/172493275-d97e28a9-f05a-439f-ac03-59de1cc7b14f.PNG)
