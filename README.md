@@ -2,13 +2,13 @@ ProjetosJS
 
 A seguir, uma prévia de alguns projetos:
 
-Cronômetro
-
-![5](https://user-images.githubusercontent.com/37301918/172493706-2df8ff03-f6f0-4f3d-95ba-d7f2bc4c4c37.PNG)
-
 ReactJS
 
 ![Capturarffgd](https://user-images.githubusercontent.com/37301918/177209439-027e3729-e811-40fb-b562-0f7f0c8f2446.PNG)
+
+Cronômetro
+
+![5](https://user-images.githubusercontent.com/37301918/172493706-2df8ff03-f6f0-4f3d-95ba-d7f2bc4c4c37.PNG)
 
 Flexbox
 
