@@ -3,7 +3,6 @@ ProjetosJS
 A seguir, uma prévia de alguns projetos:
 
 ReactJS
-
 ![Capturarffgd](https://user-images.githubusercontent.com/37301918/177209439-027e3729-e811-40fb-b562-0f7f0c8f2446.PNG)
 
 Flexbox
