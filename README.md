@@ -1,6 +1,10 @@
 ProjetosJS
 
-A seguir, uma prévia de alguns projetos:
+A seguir, uma prévia de alguns projetos de estudos:
+
+Card
+
+![card](https://user-images.githubusercontent.com/37301918/177211374-ee155f84-a7c7-401b-b201-cee55657b6e6.PNG)
 
 ReactJS
 
